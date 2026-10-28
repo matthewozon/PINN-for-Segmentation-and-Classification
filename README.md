@@ -15,7 +15,7 @@ Because the target application involves a system whose ground-truth state sequen
 The system is modelled as a 1-D particle driven by a stochastic differential equation:
 
 $$
-dz_t = F_s(z_t)\,dt + \sigma_s\,dW_t
+dz_t = F_s(z_t)\\,dt + \sigma_s\\,dW_t
 $$
 
 where $s$ is the current discrete state, $F_s(z_t)$ is the state-dependent deterministic restoring force (which drives the particle back to its equilibrium $z^{(s)}_{\mathrm{eq}}$), $\sigma_s$ is the diffusion amplitude, and $W_t$ is a standard Wiener process.  The switching between states follows a continuous-time Markov chain with user-specified transition rates.
