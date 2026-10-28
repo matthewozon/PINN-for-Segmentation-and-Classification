@@ -18,7 +18,7 @@ $$
 dz_t = F_s(z_t)\,dt + \sigma_s\,dW_t
 $$
 
-where $s$ is the current discrete state, $F_s(z_t)$ is the state-dependent deterministic restoring force (which drives the particle back to its equilibrium $z^{(s)}_{\mathrm{eq}}$), $\sigma_s$ is the diffusion amplitude, and $W_t$ is a standard Wiener process.  The particle is bounded from below ($z \geq 0$), and switching between states follows a continuous-time Markov chain with user-specified transition rates.
+where $s$ is the current discrete state, $F_s(z_t)$ is the state-dependent deterministic restoring force (which drives the particle back to its equilibrium $z^{(s)}_{\mathrm{eq}}$), $\sigma_s$ is the diffusion amplitude, and $W_t$ is a standard Wiener process.  The switching between states follows a continuous-time Markov chain with user-specified transition rates.
 
 The simulator draws long trajectories at a fixed sampling rate and records both the position trace and the ground-truth state sequence.  The ground truth is available only at training time, not at inference.
 
