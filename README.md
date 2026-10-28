@@ -72,7 +72,7 @@ $$
 \mathcal{L}_{\mathrm{phys}} = \frac{1}{T}\sum_t \sum_s p_s[t]\left(\frac{\varepsilon_s[t]}{\sigma_{d,s}}\right)^{\!2},
 $$
 
-where $p_s[t] = \operatorname{softmax}(\text{logits})[t, s]$.  This term penalises predictions that are inconsistent with the known stochastic dynamics and requires **no additional labels**.
+where $p_s[t] = \text{softmax}(\text{logits})[t, s]$.  This term penalises predictions that are inconsistent with the known stochastic dynamics and requires **no additional labels**.
 
 ### Post-Processing: Viterbi Decoder
 
